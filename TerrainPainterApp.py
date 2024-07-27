@@ -209,9 +209,9 @@ class ProvinceTerrainApp:
             - TerrainPainterApp might produce corrupted terrain.txt or not load at all if there are issues with the terrain.txt. 
             - You can use https://codeberg.org/Aetherial-Mods/Audax-Validator-EU4 to check the mod for errors before using the TerrainPainterApp.
             
-        4. Right-click on a province to get information about it.
-    
-        For more detailed information, please refer to the user manual.
+        4. Report an issue: https://github.com/Aetherum17/TerrainPainterApp
+        
+        5. Contact support: https://discord.gg/hTKzmak (Ping @Aetherum)
         """)
     
         help_text.config(state=tk.DISABLED)  # Make the text read-only
