@@ -190,17 +190,17 @@ class ProvinceTerrainApp:
         help_text.insert(tk.END, """
         How to use the TerrainPainterApp:
 
-        1. Select a root folder of the mod using the 'Select Root Folder' button.
-            - Root folder is the folder of the mod containing descriptor.mod and such folders like common or map.
-            - If there are no issues during loading of map, the used path will be saved for future launches.
-            - If you would like to use the TerrainPainterApp for naother mod, just selects its root folder after the launch.
+        1. Select the mod's root folder using the 'Select Root Folder' button.
+            - The root folder is the mod folder containing the descriptor mod and folders like common or map.
+            - If there are no issues during map loading, the used path will be saved for future launches.
+            - If you want to use the TerrainPainterApp for another mod, select its root folder after the launch.
             
-        2. Controls: Left Mouse Button, Righ Mouse Button, Middle Mouse Button
-            - Left Mouse Button: Deselects every province and terrain selected.
+        2. Controls: Left Mouse Button, right mouse Button, Middle Mouse Button
+            - Left Mouse Button: Clears selection of every province and terrain selected.
             - Right Mouse Button: 
                 1) Adds a province to the Selection.
-                2) Multiple provinces can be added to the Selection by continuing clicking on them with the Right Mouse button. If no terrain is selected, the first known province terrain becomes selected.
-                3) The type of the selected terrain can be changed using the drop list in top left corner of the app.
+                2) Multiple provinces can be added to the Selection by clicking on them with the Right Mouse button. If no terrain is selected, the first known province terrain becomes selected.
+                3) The selected terrain type can be changed using the drop list in the top left corner of the app.
                 4) Already selected provinces can be removed from the Selection by clicking on them again with the Right Mouse button.
             - Middle Mouse Button:
                 1) Applies the selected terrain to all provinces in the Selection. Updates terrain.txt and reloads the map of the TerrainPainterApp.
@@ -363,7 +363,7 @@ class ProvinceTerrainApp:
                 if terrain_color:
                     color_to_terrain_color_map[color] = terrain_color
                 else:
-                    color_to_terrain_color_map[color] = (150,150,150)
+                    color_to_terrain_color_map[color] = (255,0,255)
                 
         return(color_to_terrain_color_map)    
     
